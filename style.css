@@ -1,0 +1,163 @@
+ body {
+     background-image: linear-gradient(to right top, #eb2495, #dc23a8, #c72cba, #aa39cc, #8345dc, 
+     #aa39d3, #ca28c7, #e50eb8, #ff197c, #ff6840, #ffa700, #d7db00);
+     margin: 50px;
+     background-size: cover;
+     background-attachment: fixed;
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+ }
+
+ .container {
+     display: grid;
+     grid-gap: 20px;
+ }
+
+ .nav {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+     grid-gap: 10px;
+     text-align: center;
+     font-size: 15px;
+
+ }
+
+ .nav2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    grid-gap: 10px;
+    text-align: center;
+}
+
+ .nav a {
+     text-decoration: none;
+     text-transform: uppercase;
+     background-color: #ffc60f;
+     color: black;
+     padding: 10px;
+     font-weight: 900;
+     font-size: 20px;
+
+
+ }
+
+ /* .nav2 a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #ffc60f;
+    color: black;
+    padding: 60px;
+    font-weight: 900;
+    font-size: 20px; */
+
+ .sidebar {
+     display: grid;
+     grid-gap: 20px;
+     grid-template-areas: 
+     "tacoimg tacoimg price1"
+     "tacoimg tacoimg price2"
+     ;
+ }
+
+ .tacoimg {
+     grid-area: tacoimg;
+     background: url('./images/img.8.jpg');
+     min-height: 400px;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+     padding-left: 50px;
+     
+    }
+ .price1 {
+    grid-area: price1;
+    background-color: #ffc600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ .price2 {
+    grid-area: price2;
+    background-color: #ffc600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tacoimg h1 {
+    background-color: #ffc600;
+}
+.tacoimg p {
+    background-color: #ffc600;
+
+}
+
+.dollor {
+    font-size: 3.5rem;
+    font-weight: 300;
+
+
+}
+
+.price1, .price2, p {
+    font-weight: bold;
+}
+
+.boxses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    grid-gap: 10px;
+    text-align: center;
+}
+
+.boxses img {
+    width: 50px;
+    height: 50px;
+}
+
+.boxses div {
+    background-color: #fff;
+    padding: 15px;
+}
+
+.boxses h3 {
+    font-weight: 900;
+}
+
+.boxses p {
+    color: #333 ;
+}
+
+.ads {
+    display: grid   ;
+    background-color: #fff;
+    padding: 50px;
+    grid-template-columns: 400px 1fr;
+    align-items: center;
+}
+
+.ads-text h3 {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+
+.ads-text a {
+    text-decoration: none;
+    background-color: #ffc600;
+    padding: 10px;
+}
+
+.garaley-img img {
+    width: 200px;
+    
+}
+
+.garaley-img {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
